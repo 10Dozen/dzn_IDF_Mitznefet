@@ -1,0 +1,10 @@
+name = "dzn_IDF_Mitznefet";
+actionName = "WEBSITE";
+action = "";
+tooltip = "dzn Mitznefet";
+overview = "";
+author = "10Dozen & Excess3";
+description = "dzn Mitznefet - Version 1.0";
+logo = "mod.paa";
+logoOver = "mod.paa";
+overviewPicture = "mod.paa";
