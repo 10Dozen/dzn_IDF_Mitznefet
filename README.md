@@ -5,7 +5,7 @@
 
 IDF Mitznefet headgear and helmet covers.
 
-This mod partially some textures from Excess3's IDF mod (https://forums.bohemia.net/forums/topic/143536-idf-israeli-defense-forces-unitscomplete/).
+This mod uses some textures from Excess3's IDF mod (https://forums.bohemia.net/forums/topic/143536-idf-israeli-defense-forces-unitscomplete/).
 
 ### Mod includes
 Mod contains several item shapes and colors and can be worn as separate item or as cover for helmets (as item in glasses or NVG slot). Mitznefet has good compatibility with ACH and ECH helmets (and other small sized helmets).
