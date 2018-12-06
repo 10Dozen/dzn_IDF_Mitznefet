@@ -1,5 +1,7 @@
 # dzn_IDF_Mitznefet
 ### Version: v1
+![](https://github.com/10Dozen/dzn_IDF_Mitznefet/blob/master/logo.png?raw=true)
+
 ### Author: 10Dozen & Excess3
 ### License: APL-SA
 
