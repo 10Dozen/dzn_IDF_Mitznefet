@@ -1,6 +1,7 @@
 # dzn_IDF_Mitznefet
-##### Version: v1
-##### Author: 10Dozen & Excess3
+### Version: v1
+### Author: 10Dozen & Excess3
+### License: APL-SA
 
 IDF Mitznefet headgear and helmet covers.
 
