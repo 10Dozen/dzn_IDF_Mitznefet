@@ -22,13 +22,13 @@ dzn_G_IDF_Mitznefet_Cover2 | Glasses | IDF Mitznefet cover (Alt./Green) | Altern
 dzn_G_IDF_Mitznefet_Cover2_Desert | Glasses | IDF Mitznefet cover (Alt./Desert) | Alternative shape, Desert camo
 dzn_G_IDF_Mitznefet_Cover3 | Glasses | IDF Mitznefet cover (Alt.2/Green) | Alternative shape, Green camo
 dzn_G_IDF_Mitznefet_Cover3_Desert | Glasses | IDF Mitznefet cover (Alt.2/Desert) | Alternative shape, Desert camo
-dzn_G_IDF_Mitznefet_Cover4 | Glasses | IDF Mitznefet cover (Alt.2/Green) | Alternative shape, Green camo
-dzn_G_IDF_Mitznefet_Cover4_Desert | Glasses | IDF Mitznefet cover (Alt.2/Desert) | Alternative shape, Desert camo
+dzn_G_IDF_Mitznefet_Cover4 | Glasses | IDF Mitznefet cover (Alt.3/Green) | Alternative shape, Green camo
+dzn_G_IDF_Mitznefet_Cover4_Desert | Glasses | IDF Mitznefet cover (Alt.3/Desert) | Alternative shape, Desert camo
 dzn_NVG_IDF_Mitznefet_Cover | NVG | IDF Mitznefet cover (NV/Green) | Mitznefet helmet cover in Green camo. Replaced NVG, but allow to wear with helmet and glasses
 dzn_NVG_IDF_Mitznefet_Cover_Desert | NVG | IDF Mitznefet cover (NV/Desert) | Same as above, but in Desert camo
 dzn_NVG_IDF_Mitznefet_Cover2 | NVG | IDF Mitznefet cover (Alt./NV/Green) | Alternative shape, Green camo
 dzn_NVG_IDF_Mitznefet_Cover2_Desert | NVG | IDF Mitznefet cover (Alt./NV/Desert) | Alternative shape, Desert camo
 dzn_NVG_IDF_Mitznefet_Cover3 | NVG | IDF Mitznefet cover (Alt.2/NV/Green) | Alternative shape, Green camo
 dzn_NVG_IDF_Mitznefet_Cover3_Desert | NVG | IDF Mitznefet cover (Alt.2/NV/Desert) | Alternative shape, Desert camo
-dzn_NVG_IDF_Mitznefet_Cover4 | NVG | IDF Mitznefet cover (Alt.2/NV/Green) | Alternative shape, Green camo
-dzn_NVG_IDF_Mitznefet_Cover4_Desert | NVG | IDF Mitznefet cover (Alt.2/NV/Desert) | Alternative shape, Desert camo
+dzn_NVG_IDF_Mitznefet_Cover4 | NVG | IDF Mitznefet cover (Alt.3/NV/Green) | Alternative shape, Green camo
+dzn_NVG_IDF_Mitznefet_Cover4_Desert | NVG | IDF Mitznefet cover (Alt.3/NV/Desert) | Alternative shape, Desert camo
