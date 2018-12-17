@@ -7,18 +7,24 @@ class CfgPatches
 		weapons[] = {
 			"dzn_H_IDF_Mitznefet"
 			,"dzn_H_IDF_Mitznefet_Desert"
+			
 			,"dzn_NVG_IDF_Mitznefet_Cover"
 			,"dzn_NVG_IDF_Mitznefet_Cover_Desert"
 			,"dzn_NVG_IDF_Mitznefet_Cover2"
 			,"dzn_NVG_IDF_Mitznefet_Cover2_Desert"
 			,"dzn_NVG_IDF_Mitznefet_Cover3"
 			,"dzn_NVG_IDF_Mitznefet_Cover3_Desert"
+			,"dzn_NVG_IDF_Mitznefet_Cover4"
+			,"dzn_NVG_IDF_Mitznefet_Cover4_Desert"
+			
 			,"dzn_G_IDF_Mitznefet_Cover"
 			,"dzn_G_IDF_Mitznefet_Cover_Desert"
 			,"dzn_G_IDF_Mitznefet_Cover2"
 			,"dzn_G_IDF_Mitznefet_Cover2_Desert"
 			,"dzn_G_IDF_Mitznefet_Cover3"
 			,"dzn_G_IDF_Mitznefet_Cover3_Desert"
+			,"dzn_G_IDF_Mitznefet_Cover4"
+			,"dzn_G_IDF_Mitznefet_Cover4_Desert"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Data_F","A3_Weapons_F"};
@@ -26,6 +32,7 @@ class CfgPatches
 	};
 };
 
+#define ICON(NAME) picture = \dzn_IDF_Mitznefet\data\ui\##NAME
 #define CAMO_SELECTION(TEXTURE)	hiddenSelections[] = {"camo"}; \
     hiddenSelectionsTextures[] = { dzn_IDF_Mitznefet\data\##TEXTURE };
 
@@ -42,12 +49,12 @@ class CfgWeapons
 		scope = 2;
 		author = "Excess & 10Dozen";
 		displayName = "IDF Mitznefet (Green)";
-		picture = "\dzn_IDF_Mitznefet\data\icon_m1.paa";
-		model = "\dzn_IDF_Mitznefet\idf_miz_type1.p3d";
+		ICON(s1_green);
+		model = "\dzn_IDF_Mitznefet\idf_miznefet.p3d";
 		CAMO_SELECTION(miz1_co.paa)
 		class ItemInfo: HeadgearItem
 		{
-			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_type1.p3d";
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miznefet.p3d";
 			CAMO_SELECTION(miz1_co.paa)
 			mass = 1;
 			modelSides[] = {3,1};
@@ -67,12 +74,12 @@ class CfgWeapons
 	class dzn_H_IDF_Mitznefet_Desert: dzn_H_IDF_Mitznefet
 	{
 		displayName = "IDF Mitznefet (Desert)";
-		picture = "\dzn_IDF_Mitznefet\data\icon_m1.paa";
-		model = "\dzn_IDF_Mitznefet\idf_miz_type1.p3d";
+		ICON(s1_desert);
+		model = "\dzn_IDF_Mitznefet\idf_miznefet.p3d";
 		CAMO_SELECTION(miz2_co.paa)
 		class ItemInfo: HeadgearItem
 		{
-			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_type1.p3d";
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miznefet.p3d";
 			CAMO_SELECTION(miz2_co.paa)
 		};
 	};
@@ -84,28 +91,29 @@ class CfgWeapons
 		scope = 2;
 		author = "Excess & 10Dozen";
 		displayName = "IDF Mitznefet cover (NV/Green)";
-		picture = "\dzn_IDF_Mitznefet\data\icon_m1.paa";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover.p3d";
+		ICON(s1_green);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s1.p3d";
 		modelOptics = "-";
 		class ItemInfo
 		{
 			type = 616;
 			hmdType = 0;
-			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover.p3d";
-			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover.p3d";
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_s1.p3d";
+			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_s1.p3d";
 			mass = 1;
 		};
 	};
 	class dzn_NVG_IDF_Mitznefet_Cover_Desert: dzn_NVG_IDF_Mitznefet_Cover
 	{
 		displayName = "IDF Mitznefet cover (NV/Desert)";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover_desert.p3d";
+		ICON(s1_desert);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s1_desert.p3d";
 		class ItemInfo
 		{
 			type = 616;
 			hmdType = 0;
-			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_desert.p3d";
-			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_desert.p3d";
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_s1_desert.p3d";
+			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_s1_desert.p3d";
 			mass = 1;
 		};
 	};
@@ -113,26 +121,28 @@ class CfgWeapons
 	class dzn_NVG_IDF_Mitznefet_Cover2: dzn_NVG_IDF_Mitznefet_Cover
 	{
 		displayName = "IDF Mitznefet cover (Alt./NV/Green)";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover2.p3d";
+		ICON(s2_green);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s2.p3d";
 		class ItemInfo
 		{
 			type = 616;
 			hmdType = 0;
-			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover2.p3d";
-			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover2.p3d";
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_s2.p3d";
+			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_s2.p3d";
 			mass = 1;
 		};
 	};
 	class dzn_NVG_IDF_Mitznefet_Cover2_Desert: dzn_NVG_IDF_Mitznefet_Cover2
 	{
 		displayName = "IDF Mitznefet cover (Alt./NV/Desert)";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover2_desert.p3d";
+		ICON(s2_desert);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s2_desert.p3d";
 		class ItemInfo
 		{
 			type = 616;
 			hmdType = 0;
-			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover2_desert.p3d";
-			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover2_desert.p3d";
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_s2_desert.p3d";
+			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_s2_desert.p3d";
 			mass = 1;
 		};
 	};
@@ -140,26 +150,57 @@ class CfgWeapons
 	class dzn_NVG_IDF_Mitznefet_Cover3: dzn_NVG_IDF_Mitznefet_Cover
 	{
 		displayName = "IDF Mitznefet cover (Alt.2/NV/Green)";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover3.p3d";
+		ICON(s3_green);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s3.p3d";
 		class ItemInfo
 		{
 			type = 616;
 			hmdType = 0;
-			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover3.p3d";
-			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover3.p3d";
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_s3.p3d";
+			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_s3.p3d";
 			mass = 1;
 		};
 	};
 	class dzn_NVG_IDF_Mitznefet_Cover3_Desert: dzn_NVG_IDF_Mitznefet_Cover3
 	{
 		displayName = "IDF Mitznefet cover (Alt.2/NV/Desert)";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover3_desert.p3d";
+		ICON(s3_desert);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s3_desert.p3d";
 		class ItemInfo
 		{
 			type = 616;
 			hmdType = 0;
-			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover3_desert.p3d";
-			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover3_desert.p3d";
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_s3_desert.p3d";
+			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_s3_desert.p3d";
+			mass = 1;
+		};
+	};
+	
+	class dzn_NVG_IDF_Mitznefet_Cover4: dzn_NVG_IDF_Mitznefet_Cover
+	{
+		displayName = "IDF Mitznefet cover (Alt.3/NV/Green)";
+		ICON(s4_green);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s4.p3d";
+		class ItemInfo
+		{
+			type = 616;
+			hmdType = 0;
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_s4.p3d";
+			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_s4.p3d";
+			mass = 1;
+		};
+	};
+	class dzn_NVG_IDF_Mitznefet_Cover4_Desert: dzn_NVG_IDF_Mitznefet_Cover4
+	{
+		displayName = "IDF Mitznefet cover (Alt.3/NV/Desert)";
+		ICON(s4_desert);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s4_desert.p3d";
+		class ItemInfo
+		{
+			type = 616;
+			hmdType = 0;
+			uniformModel = "\dzn_IDF_Mitznefet\idf_miz_cover_s4_desert.p3d";
+			modelOff = "\dzn_IDF_Mitznefet\idf_miz_cover_s4_desert.p3d";
 			mass = 1;
 		};
 	};
@@ -177,38 +218,57 @@ class CfgGlasses
 		mass = 1;
 		author = "Excess & 10Dozen";
 		displayName = "IDF Mitznefet cover (Green)";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover.p3d";
-		picture = "\dzn_IDF_Mitznefet\data\icon_m1.paa";
+		ICON(s1_green);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s1.p3d";
 		identityTypes[] = {};
 		CAMO_SELECTION(miz1_co.paa)
 	};
 	class dzn_G_IDF_Mitznefet_Cover_Desert: dzn_G_IDF_Mitznefet_Cover
 	{
 		displayName = "IDF Mitznefet cover (Desert)";
-		CAMO_SELECTION(miz2_co.paa)
+		ICON(s1_desert);
+		CAMO_SELECTION(miz2_co.paa)		
 	};
-
+	
 	class dzn_G_IDF_Mitznefet_Cover2: dzn_G_IDF_Mitznefet_Cover 
 	{
 		displayName = "IDF Mitznefet cover (Alt./Green)";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover2.p3d";
+		ICON(s2_green);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s2.p3d";		
 		CAMO_SELECTION(miz1_co.paa)
 	};
 	class dzn_G_IDF_Mitznefet_Cover2_Desert: dzn_G_IDF_Mitznefet_Cover2
 	{
 		displayName = "IDF Mitznefet cover (Alt./Desert)";
+		ICON(s2_desert);
 		CAMO_SELECTION(miz2_co.paa)
 	};
 	
 	class dzn_G_IDF_Mitznefet_Cover3: dzn_G_IDF_Mitznefet_Cover 
 	{
 		displayName = "IDF Mitznefet cover (Alt.2/Green)";
-		model = "\dzn_IDF_Mitznefet\idf_miz_cover3.p3d";
+		ICON(s3_green);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s3.p3d";
 		CAMO_SELECTION(miz1_co.paa)
 	};
 	class dzn_G_IDF_Mitznefet_Cover3_Desert: dzn_G_IDF_Mitznefet_Cover3
 	{
 		displayName = "IDF Mitznefet cover (Alt.2/Desert)";
+		ICON(s3_desert);
+		CAMO_SELECTION(miz2_co.paa)
+	};
+	
+	class dzn_G_IDF_Mitznefet_Cover4: dzn_G_IDF_Mitznefet_Cover 
+	{
+		displayName = "IDF Mitznefet cover (Alt.3/Green)";
+		ICON(s4_green);
+		model = "\dzn_IDF_Mitznefet\idf_miz_cover_s4.p3d";
+		CAMO_SELECTION(miz1_co.paa)
+	};
+	class dzn_G_IDF_Mitznefet_Cover4_Desert: dzn_G_IDF_Mitznefet_Cover4
+	{
+		displayName = "IDF Mitznefet cover (Alt.3/Desert)";
+		ICON(s4_desert);
 		CAMO_SELECTION(miz2_co.paa)
 	};
 };
